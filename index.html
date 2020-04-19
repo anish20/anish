@@ -57,7 +57,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<style>
+	.technical .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.technical .panel-default > .panel-heading {
+    color: #333;
+    background-color: #e5d8d8;
+    border-color: #ddd;
+}
+.technical .panel-default > .panel-heading .accordion-toggle{
+	text-decoration: none;
+}
 
+.technical .panel-group .panel-heading {
+    border-bottom: 0;
+}
+.technical .panel {
+    margin-bottom: 20px;
+    background-color:#e5d8d8; 
+    border: none; 
+    border-radius: 4px;
+    /* -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+</style>
 
 
 </head>
@@ -138,39 +163,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <p><b>Profile : </b>Software Developer and Web Designer</p>
 			   
 			</div>
-			 <div class="container" style="background: #e5d8d8; padding: 10px">
-				 <h2>Introduction :</h2>
-				 <p style="text-align: justify">
-				 Welcome! My name is Anish. I am a Software Developer also Web designer.i loves to coding like as Back-End and Front-End designing.i always want to new creativity in software development whether Web Application, Windows Application , Programming challenges.I express my creativity through technology and enjoy creating innovative solutions to problems. I am eager to embrace new ideas, methodologies and technologies to expand my knowledge
-				 </p>
-			 </div>
-			 <div class="container" style="background: #e5d8d8; padding: 10px;margin-top: 1px">
-				 <h2>Career Objective :</h2>
 				 
-				 <p>
-					 My career goal is to become associated with a IT company as a Java Developer where I can utilize my technical skills set to a big project with teamwork and gain further experience while enhancing the company's productivity and reputation.
-				 </p>
-			 </div>
-		<div class="container" style="background: #e5d8d8; padding: 10px;margin-top: 1px">
-				 <h2>Technical Key Skills :</h2>
+			<div class="content-body container " style="background: #e5d8d8; padding: 0">
+				<div style="padding: 20px 20px 0px 20px;">
+				<h2>Introduction :</h2>
+				<p style="margin-top: 10px;">
+				Welcome! My name is Anish. I am a Software Developer also Web designer.i loves to coding like as Back-End and Front-End designing.i always want to new creativity in software development whether Web Application, Windows Application , Programming challenges.I express my creativity through technology and enjoy creating innovative solutions to problems. I am eager to embrace new ideas, methodologies and technologies to expand my knowledge
+				</p>
+			</div>
+				<div style="border-bottom: solid 1px ;margin-top: 10px;padding: 0px;"></div>
+
+				<div style="padding: 20px 20px 0px 20px;">
+					<h2>Career Objective :</h2>
 				 
-				 <ol>
-					 <li><b>XML Document</b></li>
-					 <li><b>HTML,HTML-5</b></li>
-					 <li><b>CSS, CSS3</b></li>
-					 <li><b>Javascript Basics</b></li>
-					 <li><b>JQuery</b></li>
-					 <li><b>Javascript Framework->Node-js,Reactjs,Reactjs and Redux</b></li>
-					 <li><b>Bootstrap-3,Bootstrap-4</b></li>
-					<li><b>Computer Languages-C,C++,Java,C#</b></li>
-					 <li><b>.NET Platform-> ASP.NET,MVC,.NET Core MVC,Entity Framework</b></li>
-					 <li><b>Advance Java- Servlet ,JSP , MVC , JDBC</b></li>
-					  <li><b>Database- SQL Server,MySql,Postgresql</b></li>
-					 
-				 </ol>
-			 </div>
+					<p style="margin-top: 10px;">
+						My career goal is to become associated with a IT company as a Java Developer where I can utilize my technical skills set to a big project with teamwork and gain further experience while enhancing the company's productivity and reputation.
+					</p>
+				</div>
+				<div style="border-bottom: solid 1px ;margin-top: 10px;"></div>
+				<div style="padding: 20px 20px 0px 20px;" class="technical">
+					<h2>Technical Key Skills :</h2>
+					<div class="wpp-collaps" style="margin-top: 10px;">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+						  <div class="panel-heading" role="tab" id="headingOne">
+							<a class="accordion-toggle" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<h4 class="panel-title">
+							 	Front-End Technology
+							</h4>
+						</a>
+						  </div>
+						  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+							  Content 1.
+							</div>
+						  </div>
+						</div>
+						<div class="panel panel-default">
+						  <div class="panel-heading" role="tab" id="headingTwo">
+							<a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<h4 class="panel-title">
+							  	Back-End Technology
+							  
+							</h4>
+						</a>
+						  </div>
+						  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+							  Content 2.
+							</div>
+						  </div>
+						</div>
+						<div class="panel panel-default">
+						  <div class="panel-heading" role="tab" id="headingThree">
+							<a class="accordion-toggle collapsed"  role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							
+							<h4 class="panel-title">
+							  	Database Technology
+							 
+							</h4>
+						</a>
+						  </div>
+						  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+							  Content 3.
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			
+
+			</div>
 			 
 	   </section>
+	   </div>	
 <!-- //banner -->
 <!-- footer -->
 	<div class="footer">
