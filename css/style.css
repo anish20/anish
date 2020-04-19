@@ -187,13 +187,14 @@ ul.nav li.act a:before{
 /*-- //header-bottom --*/
 /*-- banner --*/
 .banner{
-	background:url(../images/java.jpg) no-repeat 0px 0px;
+	background:url(../images/5.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:800px;
+	/* min-height:800px; */
+	margin-top: -220px;
 }
 .banner1{
 	background:url(../images/java.jpg) no-repeat 0px 0px;
@@ -202,7 +203,7 @@ ul.nav li.act a:before{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:300px;
+	/* min-height:300px; */
 }
 .banner-info{
 	margin:23em 0 0;
@@ -1553,6 +1554,7 @@ p.aut{
 	}
 	.banner {
 		min-height: 430px;
+		margin-top: 100px;
 	}
 	.hovicon {
 		margin: 0 0 1em;
@@ -1733,6 +1735,7 @@ p.aut{
 	}
 	.banner {
 		min-height: 330px;
+		margin-top: 100px;
 	}
 	.hovicon {
 		width: 60px;
@@ -1887,6 +1890,7 @@ p.aut{
 	}
 	.banner {
 		min-height: 260px;
+		margin-top: 100px;
 	}
 	.services-grids:nth-child(3) {
 		margin: 2em 0 0em;
@@ -1960,6 +1964,7 @@ p.aut{
 	}
 	.banner {
 		min-height: 230px;
+		margin-top: 100px;
 	}
 	.banner-info p,p.vel,.contact-left p,.mail-sub input[type="email"],.contact-left ul li,.footer-left p,.hello a {
 		font-size: 13px;
