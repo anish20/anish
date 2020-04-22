@@ -1,0 +1,9 @@
+.resume-body{background: lightgray;padding: 20px;}
+.resume-body .resume-title h2{text-transform: uppercase;text-align: center;text-decoration: underline }
+.resume-body .top-resume-quickinfo{margin: 20px 0 0 0;}
+.resume-body .resume-objectives{margin-bottom: 10px;}
+.resume-body .resume-education .ed-table{height: auto;  overflow-y: hidden;}
+.resume-body .resume-prof-skill{margin-top: 7px;}
+.resume-body .resume-prof-skill .pro-table{height: auto;  overflow-y: hidden;}
+.resume-body .resume-computer-prof{margin-top: 7px;}
+.resume-body .resume-computer-pro cp-table{height: auto;  overflow-y: hidden;}
