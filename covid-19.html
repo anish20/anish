@@ -301,7 +301,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
                 /////////////////////
-                
+                       $("#gtotalconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gtotalrecoverd").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gnewconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gtotaldeath").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        ///////////////
+                        $("#totalconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#totalrecoverd").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#newconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#totaldeath").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
               $.ajax({
                   url:"https://api.covid19api.com/summary",
                   type:"GET",
