@@ -301,15 +301,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
                 /////////////////////
-                       $("#gtotalconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#gtotalrecoverd").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#gnewconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#gtotaldeath").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                       $("#gtotalconfirm").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gtotalrecoverd").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gnewconfirm").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#gtotaldeath").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
                         ///////////////
-                        $("#totalconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#totalrecoverd").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#newconfirm").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
-                        $("#totaldeath").text(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#totalconfirm").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#totalrecoverd").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#newconfirm").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
+                        $("#totaldeath").html(`<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>`);
               $.ajax({
                   url:"https://api.covid19api.com/summary",
                   type:"GET",
@@ -319,19 +319,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     //Global data
                     if(data.Global!=null){
                         var globalData= data.Global;
-                        $("#gtotalconfirm").text(`${globalData.TotalConfirmed}`);
-                        $("#gtotalrecoverd").text(`${globalData.TotalRecovered}`);
-                        $("#gnewconfirm").text(`${globalData.NewConfirmed}`);
-                        $("#gtotaldeath").text(`${globalData.TotalDeaths}`);
+                        $("#gtotalconfirm").html(`${globalData.TotalConfirmed}`);
+                        $("#gtotalrecoverd").html(`${globalData.TotalRecovered}`);
+                        $("#gnewconfirm").html(`${globalData.NewConfirmed}`);
+                        $("#gtotaldeath").html(`${globalData.TotalDeaths}`);
                     }
                    
                     if(data.Countries.length>0){
                         //India Record
                         var indiaData= data.Countries[101];
-                        $("#totalconfirm").text(`${indiaData.TotalConfirmed}`);
-                        $("#totalrecoverd").text(`${indiaData.TotalRecovered}`);
-                        $("#newconfirm").text(`${indiaData.NewConfirmed}`);
-                        $("#totaldeath").text(`${indiaData.TotalDeaths}`);
+                        $("#totalconfirm").html(`${indiaData.TotalConfirmed}`);
+                        $("#totalrecoverd").html(`${indiaData.TotalRecovered}`);
+                        $("#newconfirm").html(`${indiaData.NewConfirmed}`);
+                        $("#totaldeath").html(`${indiaData.TotalDeaths}`);
                         console.log("India data-----------")
                         console.log(indiaData);
                         
