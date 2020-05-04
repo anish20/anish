@@ -1,0 +1,23 @@
+/* About Me Styles */
+/* Skill Section */
+.wpp-collaps{
+    margin-top: 10px;
+    display: flexbox;
+}
+#fontend-skill,#backend-skill,#database-skill{
+    padding: 0 30px;
+}
+#fontend-skill ul li{
+    list-style-type: decimal;
+    padding: 3px;
+}
+
+#backend-skill ul li{
+    list-style-type: decimal;
+    padding: 3px;
+}
+
+#database-skill ul li{
+    list-style-type: decimal;
+    padding: 3px;
+}

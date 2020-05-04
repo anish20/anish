@@ -1,0 +1,61 @@
+.wrapper-covid19{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background: white;
+   
+    /* padding: 10px; */
+}
+
+.tbl-wrpp{
+    overflow: auto;
+}
+
+.tble-state{
+    /* display: flex; */
+    width: 100%;
+    margin: auto;
+    background: white;
+   
+}
+.banner-demo{
+height: 400px;
+}
+
+.banner-demo::before{
+    content: "";
+    background: url("/images//covid3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    opacity:.4;
+   
+}
+
+.banner-demo .message{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+@media(max-wdth:700px){
+    .banner-demo{
+        height: 200px;
+        }
+        
+        .banner-demo::before{
+            content: "";
+            background: url("/images//covid3.jpg") no-repeat;
+            background-size: cover;
+            background-position-x: center right 0ex;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            opacity:.4;
+           
+        }
+}
