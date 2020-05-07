@@ -62,7 +62,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
+<style>
+    @media(max-width: 560px){
+        .tbl-wrpp table thead tr th{
+            font-size: 12px !important;
+            font-weight: 500;
+            white-space: nowrap;
+        }
 
+      
+
+        }
+        
+</style>
 
 </head>
 	
@@ -237,18 +249,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </div>
              <div class="mts "><br>
                 <div class="tbl-wrpp">
-                <table class="table table-bordered" id="tblcovid">
+                <table class="table table-bordered " id="tblcovid">
                     <thead class="bg-info">
                     <tr class="bg-info">
                         <th colspan="8" style="text-align: center;">Country Wise Data</th>
                     </tr>
                    
                     <tr>
-                        <th>SNo</th>
+                       
                         <th>Country Name</th>
-                        <th>New Confirmed</th>
-                        <th>New Death</th>
-                        <th>New Recoverd</th>
                         <th>Total Confirmed</th>
                         <th>Total Death</th>
                         <th>Total Recovered</th>
@@ -337,11 +346,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         
                         var row= $("#tblcovid tbody");
                         $.each(data.Countries,(index,item)=>{
-                            row+=`<tr><td>${index+1}</td><td>${item.Country}</td>
-                            <td>${item.NewConfirmed}</td>
-                            <td>${item.NewDeaths}</td><td>${item.NewRecovered}</td>
-                            <td>${item.TotalConfirmed}</td><td>${item.TotalDeaths}</td>
-                            <td>${item.TotalRecovered}</td></tr>`;
+                            row+=`<tr>
+                           
+                            <td>${item.Country}</td>
+                            <td>${item.TotalConfirmed}</td>
+                            <td>${item.TotalDeaths}</td>
+                            <td>${item.TotalRecovered}</td>
+                            </tr>`;
                         });
                         $("#tblcovid tbody").append(row);
                     }
