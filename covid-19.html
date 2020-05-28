@@ -336,13 +336,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                    
                     if(data.Countries.length>0){
                         //India Record
-                        var indiaData= data.Countries[101];
-                        $("#totalconfirm").html(`${indiaData.TotalConfirmed}`);
-                        $("#totalrecoverd").html(`${indiaData.TotalRecovered}`);
-                        $("#newconfirm").html(`${indiaData.NewConfirmed}`);
-                        $("#totaldeath").html(`${indiaData.TotalDeaths}`);
+                        var indiaData= data.Countries;
+                      var it=  indiaData.filter(a=>{
+                            return a.CountryCode=="IN";
+                        })
+                        $("#totalconfirm").html(`${it[0].TotalConfirmed}`);
+                        $("#totalrecoverd").html(`${it[0].TotalRecovered}`);
+                        $("#newconfirm").html(`${it[0].NewConfirmed}`);
+                        $("#totaldeath").html(`${it[0].TotalDeaths}`);
                         console.log("India data-----------")
-                        console.log(indiaData);
+                        console.log(it);
+                        
                         
                         var row= $("#tblcovid tbody");
                         $.each(data.Countries,(index,item)=>{
